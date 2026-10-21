@@ -1,6 +1,11 @@
+/// Centralised HTTP configuration for the shop API.
 class ApiConstants {
-  static const baseUrl = 'https://backend-course-6tuu.onrender.com';
-  static const productsPath = '/api/products';
-  static const featuredProductsPath = '/api/products/featured';
-  static const categoriesPath = '/api/Categories';
+  const ApiConstants._();
+
+  static const String baseUrl = 'https://backend-course-6tuu.onrender.com';
+  static const String productsPath = '/api/products';
+  static const String featuredProductsPath = '/api/products/featured';
+  static const String categoriesPath = '/api/Categories';
+
+  static const Duration requestTimeout = Duration(seconds: 25);
 }
